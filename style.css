@@ -1,0 +1,491 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --- Scrollbars --- */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF8000;
+}
+
+/* --- Header --- */
+.header {
+    padding: 0px 50px 0px 50px;
+    background-color: #ffffff;
+    min-height: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.navigator ul {
+    display: flex;
+}
+
+.navigator ul li {
+    list-style: none;
+    height: 100%;
+}
+
+.navigator ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all 225ms ease-in-out;
+}
+
+.navigator ul li a:hover {
+    color: #FF8000;
+    border-bottom: 2px solid #FF8000;
+    transition: all 225ms ease-in-out;
+}
+
+.navigator ul button {
+    margin-right: 20px;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: #FF8000;
+    border-radius: 100px;
+}
+
+.dnone {
+    display: none !important;
+}
+
+.active {
+    display: flex !important;
+}
+
+.shopping-cart {
+    display: none;
+}
+
+/* --- Main --- */
+.main {
+    display: flex;
+}
+/* --- Main Left --- */
+.main-left {
+    width: 75%;
+}
+
+.main-left-top {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.main-left-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-left-company-img {
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 235px;
+    left: 50px;
+}
+
+.main-left-company {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info-button {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    scale: 0.9;
+    transition: 225ms ease-in-out;
+}
+
+.main-info-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.144);
+    scale: 1;
+    transition: 225ms ease-in-out;
+}
+
+.main-left-company-info {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.rating {
+    color:#FF8000
+}
+
+.rating a {
+    color: #FF8000;
+}
+
+.main-left-order-info {
+    padding-top: 10px;
+    display: flex;
+}
+
+.order-info-container {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.order-info-img {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* --- Main Left Dishes --- */
+.main-left-dishes {
+    padding: 5px 100px 10px 50px;
+    background-color: #FCFCFC;
+}
+
+.dish-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+
+/* --- Main Left Dishes Content --- */
+.dish-content {
+    padding: 5px 0px 20px 0px;
+}
+
+.order-container {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.order-container:hover {
+    background-color: #EFEDEA;
+}
+
+.order-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Main Right --- */
+.close-popup {
+    display: none;
+}
+
+.main-right {
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    border: 2px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    position: fixed;
+    height: 100%;
+    top: 100px;
+    right: 0px;
+    transition: all 150ms ease-in-out;
+    background-color: #fafafa;
+}
+
+.empty-basket {
+    padding: 100px 15px 0px 15px;
+}
+
+.filled-basket {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-container {
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgrey;
+}
+
+.basket-order-conatiner {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket-button-conatiner {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.basket-button-conatiner img {
+    margin-left: 10px;
+}
+
+.calculation-basket {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.order-button {
+    padding: 10px 50px 10px 50px;
+    background-color: #FF8000;
+    color: white;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* --- Footer --- */
+.footer {
+    height: 150px;
+    padding: 0px 50px 0px 50px;
+    background-color: #fafafa;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-child ul {
+    padding: 0px;
+}
+
+.footer-child ul li {
+    text-align: center;
+    list-style: none;
+}
+
+.footer-child ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 225ms ease-in-out;
+}
+
+.footer-child ul li a:hover {
+    color: #FF8000;
+    transition: all 225ms ease-in-out;
+}
+
+.footer-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    object-fit: contain;
+    border-radius: 100%;
+    transition: all 225ms ease-in-out;
+    transform: scale(0.9);
+}
+
+.footer-img:hover {
+    transition: all 225ms ease-in-out;
+    transform: scale(1);
+}
+
+@media (max-width: 1100px) {
+    /* --- Header --- */
+    .header {
+        padding: 0px 10px 0px 10px;
+    }
+
+    /* --- Main Left --- */
+    .main-left-company {
+        margin-right: 30px;
+    }
+
+    .main-left-company-info {
+        margin-right: 30px;
+    }
+
+    .main-left-company-img {
+        left: 10px;
+    }
+
+    .main-info-button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .main-left-company {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main-left-company-info {
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+
+    .main-left-dishes {
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+
+    /* --- Main Right --- */
+    .main-right {
+        padding: 10px;
+    }
+
+    .empty-basket {
+        padding: 100px 0px 0px 0px;
+    }
+
+    /* --- Footer --- */
+    .footer {
+        padding: 0px 10px 0px 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    /* --- Header --- */
+    .header {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top:0px;
+        z-index: 999;
+    }
+
+    .shopping-cart {
+        display: flex;
+        cursor: pointer;
+        transition: all 225ms ease-in-out;
+        transform: scale(0.9);
+    }
+
+    .shopping-cart:hover {
+        transition: all 225ms ease-in-out;
+        transform: scale(1);
+    }
+
+    .close-popup {
+        cursor: pointer;
+        transition: all 225ms ease-in-out;
+        transform: scale(0.9);
+        display: flex;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-left: 30px;
+    }
+
+    .close-popup:hover { 
+        transition: all 225ms ease-in-out;
+        transform: scale(1);
+    }
+
+    /* --- Main Left --- */
+    .main-left {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    .main-left-company {
+        margin-right: 10px;
+    }
+
+    .main-left-company-info {
+        margin-right: 10px;
+    }
+
+    .main-left-dishes {
+        padding-right: 10px;
+    }
+
+    /* --- Main Right --- */
+    .main-right {
+        display: none;
+        width: 100%;
+        z-index: 999;
+        position: fixed;
+    }
+
+    .main-right h2 {
+        padding-left: 20px;
+    }
+
+    .filled-basket {
+        padding-left: 35px;
+        padding-right: 15px;
+    }
+
+    .calculation-basket {
+        padding-left: 35px;
+        padding-right: 15px;
+    }
+
+    .empty-basket {
+        padding-left: 35px;
+        padding-right: 15px;
+    }
+}

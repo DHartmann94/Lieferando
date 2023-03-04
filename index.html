@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferdienst</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/home-3-512.jpg">
+    <link>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onload="renderDishes()">
+    <!-- Header -->
+    <nav class="header">
+        <a href="#"><img class="logo-img" src="img/home-3-512.jpg" alt="Lieferando Logo"></a>
+        <a href="#" class="toggle-btn" onclick="toggle()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navigator" id="show">
+            <ul>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="#">Anmelden</a></li>
+            </ul>
+        </div>
+        <img class="shopping-cart" src="img/shopping-bag-2-32.jpg" onclick="toggle()">
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Main Left Top -->
+        <div class="main-left">
+            <div class="main-left-top">
+                <img class="main-left-img" src="img/pizza-main-left.jpg">
+                <img class="main-left-company-img" src="img/pizza-3-512.jpg">
+                <div class="main-left-company">
+                    <h1>Pizzeria</h1>
+                    <div>
+                        <img class="main-info-button" src="img/info-2-64.jpg" alt="Info">
+                        <img class="main-info-button" src="img/favorite-3-64.jpg" alt="Favorite">
+                    </div>
+                </div>
+                <div class="main-left-company-info">
+                    <div class="rating">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                        <a href="#">2 Bewertungen</a>
+                    </div>
+                    <div class="main-left-order-info">
+                        <div class="order-info-container"><img class="order-info-img" src="img/time-8-32.jpg">30-65 min
+                        </div>
+                        <div class="order-info-container"><img class="order-info-img" src="img/bike-3-32.jpg">2,50€
+                        </div>
+                        <div class="order-info-container"><img class="order-info-img"
+                                src="img/shopping-bag-2-32.jpg">Min. 10,00€</div>
+                    </div>
+                    <p>
+                        Bei diesem Restaurant kannst du Stempel sammeln. Stelle beim Bestellabschluss bitte sicher,
+                        dass du dich für unseren Newsletter angemeldet hast, um deine Stempel per E-Mail zu erhalten.
+                    </p>
+                </div>
+            </div>
+            <!-- Main Left Dishes -->
+            <div class="main-left-dishes">
+                <div>
+                    <h2>Speisekarte</h2>
+                    <img class="dish-img" src="img/pizza-order.jpg" alt="Pizza">
+                    <h3>Pizza</h3>
+                </div>
+                <!-- Content -->
+                <div class="dish-content" id="dishContent">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Right -->
+        <div class="main-right" id="mainRight">
+            <img class="close-popup" src="img/close-window-32.jpg" onclick="toggle()">
+            <h2>Warenkorb</h2>
+            <div class="empty-basket" id="emptyBasket">
+                <img src="img/shopping-bag-2-32.jpg">
+                <h3>Fülle deinen Warenkorb</h3>
+                <span>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</span>
+            </div>
+            <div class="filled-basket" id="filledBasket">
+            </div>
+            <div id="calculation">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#"><img class="logo-img" src="img/home-3-512.jpg" alt="Instagram Logo"></a>
+        <div class="footer-child">
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Datenschutz</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="#"><img class="footer-img" src="img/facebook-4-128.jpg" alt="Facebook"></a>
+            <a href="#"><img class="footer-img" src="img/youtube-4-128.jpg" alt="YouTube"></a>
+            <a href="#"><img class="footer-img" src="img/twitter-4-128.jpg" alt="Twitter"></a>
+        </div>
+    </div>
+</body>
+
+</html>
