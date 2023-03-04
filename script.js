@@ -16,9 +16,9 @@ function renderDishes() {
 }
 
 /* --- Basket --- */
-function addToBasket(i) { // includes sucht im array basketName nach names[i], wird i nicht gefunden wird else ausgeführt
-    if (basketName.includes(names[i])) { // includes gibt TRUE order FALSE aus
-        let x = basketName.indexOf(names[i]) //indexOf sucht in basketName nach names[i] und gibt den WERT heraus
+function addToBasket(i) { 
+    if (basketName.includes(names[i])) { 
+        let x = basketName.indexOf(names[i]) 
         basketAmount[x]++;
     } else {
         basketName.push(names[i]);
